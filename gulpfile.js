@@ -5,7 +5,7 @@ var inject = require('gulp-inject');
 var browserify = require('gulp-browserify-thin');
 
 gulp.task('build', [ 'browserify'], () => {
-    var injectTarget = gulp.src('./core/index.html');
+    var injectTarget = gulp.src('.src//core/index.html');
     // eventually we'll need to also pipe in css
     return injectTarget.pipe(inject(gulp.src('./bin/*.js'))).pipe(gulp.dest('bin'));
 });
