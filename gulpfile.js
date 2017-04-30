@@ -21,7 +21,8 @@ gulp.task('browserify', () => {
         process.exit(1);
     }).pipe(gulp.dest('bin'));
 })
-gulp.task('run', ['build'], () => {
-    require('./bin/www');
+gulp.task('run', () => {
+    return require('./bin/www');
 });
+
 gulp.task('default', ['build', 'run'], () => {})
