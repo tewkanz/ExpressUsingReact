@@ -1,6 +1,8 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 'use strict';
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
@@ -11,16 +13,37 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom2.default.render(_react2.default.createElement(
-    'h1',
-    null,
-    'Hello, world!'
-), document.getElementById('root'));
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-document.addEventListener('load', function () {
-    return alert('Hello!');
-});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNoZWxsLmpzeCJdLCJuYW1lcyI6WyJyZW5kZXIiLCJkb2N1bWVudCIsImdldEVsZW1lbnRCeUlkIiwiYWRkRXZlbnRMaXN0ZW5lciIsImFsZXJ0Il0sIm1hcHBpbmdzIjoiOztBQUFBOzs7O0FBQ0E7Ozs7OztBQUVBLG1CQUFTQSxNQUFULENBQ0k7QUFBQTtBQUFBO0FBQUE7QUFBQSxDQURKLEVBRUlDLFNBQVNDLGNBQVQsQ0FBd0IsTUFBeEIsQ0FGSjs7QUFLQUQsU0FBU0UsZ0JBQVQsQ0FBMEIsTUFBMUIsRUFBa0M7QUFBQSxXQUFNQyxNQUFNLFFBQU4sQ0FBTjtBQUFBLENBQWxDIiwiZmlsZSI6InNoZWxsLmpzeCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCBSZWFjdERPTSBmcm9tICdyZWFjdC1kb20nO1xyXG5cclxuUmVhY3RET00ucmVuZGVyKFxyXG4gICAgPGgxPkhlbGxvLCB3b3JsZCE8L2gxPixcclxuICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyb290JylcclxuKTtcclxuXHJcbmRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ2xvYWQnLCAoKSA9PiBhbGVydCgnSGVsbG8hJykpOyJdfQ==
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Shell = function (_React$Component) {
+    _inherits(Shell, _React$Component);
+
+    function Shell(props) {
+        _classCallCheck(this, Shell);
+
+        return _possibleConstructorReturn(this, (Shell.__proto__ || Object.getPrototypeOf(Shell)).call(this, props));
+    }
+
+    _createClass(Shell, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'h1',
+                null,
+                'Hello world!'
+            );
+        }
+    }]);
+
+    return Shell;
+}(_react2.default.Component);
+
+_reactDom2.default.render(_react2.default.createElement(Shell, null), document.getElementById('root'));
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNoZWxsLmpzeCJdLCJuYW1lcyI6WyJTaGVsbCIsInByb3BzIiwiQ29tcG9uZW50IiwicmVuZGVyIiwiZG9jdW1lbnQiLCJnZXRFbGVtZW50QnlJZCJdLCJtYXBwaW5ncyI6Ijs7OztBQUFBOzs7O0FBQ0E7Ozs7Ozs7Ozs7OztJQUNNQSxLOzs7QUFDRixtQkFBWUMsS0FBWixFQUFrQjtBQUFBOztBQUFBLDZHQUNSQSxLQURRO0FBRWpCOzs7O2lDQUNRO0FBQ0wsbUJBQU87QUFBQTtBQUFBO0FBQUE7QUFBQSxhQUFQO0FBQ0g7Ozs7RUFOZSxnQkFBTUMsUzs7QUFTMUIsbUJBQVNDLE1BQVQsQ0FBZ0IsOEJBQUMsS0FBRCxPQUFoQixFQUEyQkMsU0FBU0MsY0FBVCxDQUF3QixNQUF4QixDQUEzQiIsImZpbGUiOiJzaGVsbC5qc3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xyXG5pbXBvcnQgUmVhY3RET00gZnJvbSAncmVhY3QtZG9tJ1xyXG5jbGFzcyBTaGVsbCBleHRlbmRzIFJlYWN0LkNvbXBvbmVudCB7XHJcbiAgICBjb25zdHJ1Y3Rvcihwcm9wcyl7XHJcbiAgICAgICAgc3VwZXIocHJvcHMpO1xyXG4gICAgfVxyXG4gICAgcmVuZGVyKCkge1xyXG4gICAgICAgIHJldHVybiA8aDE+SGVsbG8gd29ybGQhPC9oMT47XHJcbiAgICB9O1xyXG59XHJcblxyXG5SZWFjdERPTS5yZW5kZXIoPFNoZWxsIC8+LCBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncm9vdCcpKTsiXX0=
 },{"react":182,"react-dom":31}],2:[function(require,module,exports){
 (function (process){
 'use strict';
