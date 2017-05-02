@@ -1,7 +1,7 @@
-import expect from 'expect';
+import React from 'react';
+import ReactTestUtils from 'react-test-renderer'
+import Shell from './shell.jsx'
 
-describe('empty', () => {
-    it('should work', () => {
-        expect(true).toEqual(true);
-    });
-});
+it('renders without crashing', () => {
+    const component = ReactTestUtils.create(<Shell />)
+})

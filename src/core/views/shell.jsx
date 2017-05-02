@@ -1,7 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-ReactDOM.render(
-    <h1>Hello, world!</h1>,
-    document.getElementById('root')
-);
+class Shell extends React.Component {
+    constructor(props){
+        super(props);
+    }
+    render() {
+        return (<h1>Hello world!</h1>);
+    };
+}
+
+export default Shell;
