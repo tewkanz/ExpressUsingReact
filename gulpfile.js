@@ -13,7 +13,7 @@ gulp.task('browserify', () => {
     var babelrc = fs.readFileSync("./.babelrc", { encoding: 'UTF-8'});
     var babelOptions = JSON.parse(babelrc);
     var b = browserify({ baseDir: __dirname })
-        .add('./src/core/views/shell.jsx')
+        .add('./src/core/test.view.jsx')
         .transform("babelify", babelOptions)
     var stream = b.bundle("browserifiedFile.js");
     return browserifiedFile = stream.on('error', (err) => {
